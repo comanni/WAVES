@@ -80,8 +80,15 @@ def sendTelegramMessage(message):
 
 def batchSendTelegram(messageSet):
     for message in messageSet:
-        sendTelegramMessage(message)
-        time.sleep(2)
+        try:
+            sendTelegramMessage(message)
+        except:
+            time.sleep(30)
+            try:
+                sendTelegramMessage(message)
+            except:
+                print("에러로 발송이 되지 않았습니다.")
+        time.sleep(3)
 ## 반복 Function : 2분마다 반복
 
 if __name__ == "__main__":
@@ -100,22 +107,25 @@ if __name__ == "__main__":
             waitingTx = [] # 저장할 transaction 임시 보관
 
             while True:
-                print("wallet ID : ", walletId["wallet"])
-                transactions = exportTransaction(walletId["wallet"], cursor) # 거래 내역을 불러옴
+                try:
+                    print("wallet ID : ", walletId["wallet"])
+                    transactions = exportTransaction(walletId["wallet"], cursor) # 거래 내역을 불러옴
 
-                print("확인되는 거래 갯수 : ", len(transactions["list"]))
-                for tx in transactions["list"]:
-                    if tx["timestamp"] > lastUpdate:            # 기존 값보다 시간이 흘렀으면
-                        tx["nickname"] = walletId["nickname"]   # 해당 TX를 저장한다.
-                        waitingTx.append(tx)
+                    print("확인되는 거래 갯수 : ", len(transactions["list"]))
+                    for tx in transactions["list"]:
+                        if tx["timestamp"] > lastUpdate:            # 기존 값보다 시간이 흘렀으면
+                            tx["nickname"] = walletId["nickname"]   # 해당 TX를 저장한다.
+                            waitingTx.append(tx)
 
-                        if tx["timestamp"] > currentLastUpdate: # 최종 TIME STAMP 갱신을 위해 가장 큰값인 경우 저장
-                            currentLastUpdate = tx["timestamp"]
-                    _resLast = tx["timestamp"] # 현재 진행하고 있는 time stamp 저장
+                            if tx["timestamp"] > currentLastUpdate: # 최종 TIME STAMP 갱신을 위해 가장 큰값인 경우 저장
+                                currentLastUpdate = tx["timestamp"]
+                        _resLast = tx["timestamp"] # 현재 진행하고 있는 time stamp 저장
 
-                print("isLastPage : " , transactions["isLastPage"])
-                print("_resLast: ", _resLast, "lastUpdate: ", lastUpdate)
-                break
+                    print("isLastPage : " , transactions["isLastPage"])
+                    print("_resLast: ", _resLast, "lastUpdate: ", lastUpdate)
+                    break
+                except Exception as e:
+                    break
 
             ###### 임시중단
                 if transactions["isLastPage"] != False or _resLast < lastUpdate:    # 마지막페이지이거나, 기존 저장했던 영역에 도달했으면
