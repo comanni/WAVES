@@ -1,1 +1,77 @@
-[{"wallet": "3PEEsRmcWspCxhKqobvKY3axW1846AMRwzr", "nickname": "\uba54\uc778\uacc4\uc815", "lastUpdate": 1652340200000}, {"wallet": "3PPuzqQC4bHxWitTyndySGcaMzHHNGipQns", "nickname": "\ud30c\uc0dd\uacc4\uc81502", "lastUpdate": 1652774035000}, {"wallet": "3PMUTKMtJxfG5pWZYwRcabnP16HYqo4fYK7", "nickname": "\ud30c\uc0dd\uacc4\uc81503", "lastUpdate": 1653298342000}, {"wallet": "3PNWjCoZuFyKDz5tvb2YcU5LtcDyyUAxaSh", "nickname": "\ud30c\uc0dd\uacc4\uc81504", "lastUpdate": 1653312273000}, {"wallet": "3PDMxU7HqDwKc2qUpLVe5wJKi1toHDgRvL5", "nickname": "\ud30c\uc0dd\uacc4\uc81505", "lastUpdate": 1652314614000}, {"wallet": "3PQuhmnRcXndq864htn4oGZuuNN2ukWEodR", "nickname": "\ud30c\uc0dd\uacc4\uc81506", "lastUpdate": 1653079137000}, {"wallet": "3P87zrU6UmJq7wEZz84Fm9PJXr9tLGfEwPB", "nickname": "\ubbfc\ud305\uacc4\uc815", "lastUpdate": 1652875368000}, {"wallet": "3P5Dxtpq7C4eFejTauwuX4TmznUWWPh8Kah", "nickname": "\ud30c\uc0dd\uacc4\uc81507", "lastUpdate": 1653297621000}, {"wallet": "3PHFKt918EBMZ54xzbSDrVs8PJPARX3VBNV", "nickname": "\ud30c\uc0dd\uacc4\uc81508", "lastUpdate": 1653289697000}, {"wallet": "3PJgfXqEJNF6ZMnKRuvFQcxr58CYZDzTw1c", "nickname": "\ud30c\uc0dd\uacc4\uc81509", "lastUpdate": 1652879373000}, {"wallet": "3PJMyu8DvMzqrHupRXwMEQtMQf8CKq5JnuE", "nickname": "\ud30c\uc0dd\uacc4\uc81510", "lastUpdate": 1653218442000}, {"wallet": "3PD3oCH6jRsvXYZz9mdX8rShqWKn6DC65zf", "nickname": "\ud30c\uc0dd\uacc4\uc81511", "lastUpdate": 1653281218000}, {"wallet": "3PHkZUJpS3AfmnXBNLCBmpqL25GJZb1hGiE", "nickname": "ALAMEDA", "lastUpdate": "1651393887000"}, {"wallet": "3P4xKZqsfh6FoiMH3rGb2PcbUGkhR5vErep", "nickname": "\ud30c\uc0dd\uacc4\uc81512", "lastUpdate": 1653290250000}]
+[
+  {
+    "wallet": "3PEEsRmcWspCxhKqobvKY3axW1846AMRwzr",
+    "nickname": "\uba54\uc778\uacc4\uc815",
+    "lastUpdate": 1652340200000
+  },
+  {
+    "wallet": "3PPuzqQC4bHxWitTyndySGcaMzHHNGipQns",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81502",
+    "lastUpdate": 1652774035000
+  },
+  {
+    "wallet": "3PMUTKMtJxfG5pWZYwRcabnP16HYqo4fYK7",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81503",
+    "lastUpdate": 1653298342000
+  },
+  {
+    "wallet": "3PNWjCoZuFyKDz5tvb2YcU5LtcDyyUAxaSh",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81504",
+    "lastUpdate": 1653312273000
+  },
+  {
+    "wallet": "3PDMxU7HqDwKc2qUpLVe5wJKi1toHDgRvL5",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81505",
+    "lastUpdate": 1652314614000
+  },
+  {
+    "wallet": "3PQuhmnRcXndq864htn4oGZuuNN2ukWEodR",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81506",
+    "lastUpdate": 1653079137000
+  },
+  {
+    "wallet": "3P87zrU6UmJq7wEZz84Fm9PJXr9tLGfEwPB",
+    "nickname": "\ubbfc\ud305\uacc4\uc815",
+    "lastUpdate": 1652875368000
+  },
+  {
+    "wallet": "3P5Dxtpq7C4eFejTauwuX4TmznUWWPh8Kah",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81507",
+    "lastUpdate": 1653297621000
+  },
+  {
+    "wallet": "3PHFKt918EBMZ54xzbSDrVs8PJPARX3VBNV",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81508",
+    "lastUpdate": 1653289697000
+  },
+  {
+    "wallet": "3PJgfXqEJNF6ZMnKRuvFQcxr58CYZDzTw1c",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81509",
+    "lastUpdate": 1652879373000
+  },
+  {
+    "wallet": "3PJMyu8DvMzqrHupRXwMEQtMQf8CKq5JnuE",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81510",
+    "lastUpdate": 1653218442000
+  },
+  {
+    "wallet": "3PD3oCH6jRsvXYZz9mdX8rShqWKn6DC65zf",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81511",
+    "lastUpdate": 1653281218000
+  },
+  {
+    "wallet": "3PHkZUJpS3AfmnXBNLCBmpqL25GJZb1hGiE",
+    "nickname": "ALAMEDA",
+    "lastUpdate": "1651393887000"
+  },
+  {
+    "wallet": "3P4xKZqsfh6FoiMH3rGb2PcbUGkhR5vErep",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81512",
+    "lastUpdate": 1653290250000
+  },
+  {
+    "wallet": "3PKeyoK5hQ4BWjF19BcQmALFcxAZGAe6Xxr",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81513",
+    "lastUpdate": 1653290250000
+  }
+]
