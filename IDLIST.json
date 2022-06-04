@@ -1,1 +1,82 @@
-[{"wallet": "3PEEsRmcWspCxhKqobvKY3axW1846AMRwzr", "nickname": "\uba54\uc778\uacc4\uc815", "lastUpdate": 1654296571000}, {"wallet": "3PPuzqQC4bHxWitTyndySGcaMzHHNGipQns", "nickname": "\ud30c\uc0dd\uacc4\uc81502", "lastUpdate": 1654036972000}, {"wallet": "3PMUTKMtJxfG5pWZYwRcabnP16HYqo4fYK7", "nickname": "\ud30c\uc0dd\uacc4\uc81503", "lastUpdate": 1654031245000}, {"wallet": "3PNWjCoZuFyKDz5tvb2YcU5LtcDyyUAxaSh", "nickname": "\ud30c\uc0dd\uacc4\uc81504", "lastUpdate": 1654188851000}, {"wallet": "3PDMxU7HqDwKc2qUpLVe5wJKi1toHDgRvL5", "nickname": "\ud30c\uc0dd\uacc4\uc81505", "lastUpdate": 1652314614000}, {"wallet": "3PQuhmnRcXndq864htn4oGZuuNN2ukWEodR", "nickname": "\ud30c\uc0dd\uacc4\uc81506", "lastUpdate": 1654008311000}, {"wallet": "3P87zrU6UmJq7wEZz84Fm9PJXr9tLGfEwPB", "nickname": "\ubbfc\ud305\uacc4\uc815", "lastUpdate": 1654089457000}, {"wallet": "3P5Dxtpq7C4eFejTauwuX4TmznUWWPh8Kah", "nickname": "\ud30c\uc0dd\uacc4\uc81507", "lastUpdate": 1654296927000}, {"wallet": "3PHFKt918EBMZ54xzbSDrVs8PJPARX3VBNV", "nickname": "\ud30c\uc0dd\uacc4\uc81508", "lastUpdate": 1654296470000}, {"wallet": "3PJgfXqEJNF6ZMnKRuvFQcxr58CYZDzTw1c", "nickname": "\ud30c\uc0dd\uacc4\uc81509", "lastUpdate": 1654036972000}, {"wallet": "3PJMyu8DvMzqrHupRXwMEQtMQf8CKq5JnuE", "nickname": "\ud30c\uc0dd\uacc4\uc81510", "lastUpdate": 1654006928000}, {"wallet": "3PD3oCH6jRsvXYZz9mdX8rShqWKn6DC65zf", "nickname": "\ud30c\uc0dd\uacc4\uc81511", "lastUpdate": 1654231847000}, {"wallet": "3PHkZUJpS3AfmnXBNLCBmpqL25GJZb1hGiE", "nickname": "ALAMEDA", "lastUpdate": "1651393887000"}, {"wallet": "3P4xKZqsfh6FoiMH3rGb2PcbUGkhR5vErep", "nickname": "\ud30c\uc0dd\uacc4\uc81512", "lastUpdate": 1654311181000}, {"wallet": "3PKeyoK5hQ4BWjF19BcQmALFcxAZGAe6Xxr", "nickname": "\ud30c\uc0dd\uacc4\uc81513", "lastUpdate": 1654177420000}]
+[
+  {
+    "wallet": "3PEEsRmcWspCxhKqobvKY3axW1846AMRwzr",
+    "nickname": "\uba54\uc778\uacc4\uc815",
+    "lastUpdate": 1654296571000
+  },
+  {
+    "wallet": "3PPuzqQC4bHxWitTyndySGcaMzHHNGipQns",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81502",
+    "lastUpdate": 1654036972000
+  },
+  {
+    "wallet": "3PMUTKMtJxfG5pWZYwRcabnP16HYqo4fYK7",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81503",
+    "lastUpdate": 1654031245000
+  },
+  {
+    "wallet": "3PNWjCoZuFyKDz5tvb2YcU5LtcDyyUAxaSh",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81504",
+    "lastUpdate": 1654188851000
+  },
+  {
+    "wallet": "3PDMxU7HqDwKc2qUpLVe5wJKi1toHDgRvL5",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81505",
+    "lastUpdate": 1652314614000
+  },
+  {
+    "wallet": "3PQuhmnRcXndq864htn4oGZuuNN2ukWEodR",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81506",
+    "lastUpdate": 1654008311000
+  },
+  {
+    "wallet": "3P87zrU6UmJq7wEZz84Fm9PJXr9tLGfEwPB",
+    "nickname": "\ubbfc\ud305\uacc4\uc815",
+    "lastUpdate": 1654089457000
+  },
+  {
+    "wallet": "3P5Dxtpq7C4eFejTauwuX4TmznUWWPh8Kah",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81507",
+    "lastUpdate": 1654296927000
+  },
+  {
+    "wallet": "3PHFKt918EBMZ54xzbSDrVs8PJPARX3VBNV",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81508",
+    "lastUpdate": 1654296470000
+  },
+  {
+    "wallet": "3PJgfXqEJNF6ZMnKRuvFQcxr58CYZDzTw1c",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81509",
+    "lastUpdate": 1654036972000
+  },
+  {
+    "wallet": "3PJMyu8DvMzqrHupRXwMEQtMQf8CKq5JnuE",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81510",
+    "lastUpdate": 1654006928000
+  },
+  {
+    "wallet": "3PD3oCH6jRsvXYZz9mdX8rShqWKn6DC65zf",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81511",
+    "lastUpdate": 1654231847000
+  },
+  {
+    "wallet": "3PHkZUJpS3AfmnXBNLCBmpqL25GJZb1hGiE",
+    "nickname": "ALAMEDA",
+    "lastUpdate": "1651393887000"
+  },
+  {
+    "wallet": "3P4xKZqsfh6FoiMH3rGb2PcbUGkhR5vErep",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81512",
+    "lastUpdate": 1654311181000
+  },
+  {
+    "wallet": "3PKeyoK5hQ4BWjF19BcQmALFcxAZGAe6Xxr",
+    "nickname": "\ud30c\uc0dd\uacc4\uc81513",
+    "lastUpdate": 1654177420000
+  },
+  {
+    "wallet": "3P84evXSWMchYMa6hkLLRmQ4usHf4cNsjNp",
+    "nickname": "MERGED_ACCOUNT",
+    "lastUpdate": 1654311492000
+  }
+]
