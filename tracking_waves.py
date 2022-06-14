@@ -1,3 +1,4 @@
+import traceback
 import requests
 import csv
 import time
@@ -88,6 +89,8 @@ def batchSendTelegram(messageSet):
                 sendTelegramMessage(message)
             except:
                 print("에러로 발송이 되지 않았습니다.")
+                print("MESSAGE : ", message)
+                print(traceback.format_exc())
         time.sleep(3)
 ## 반복 Function : 2분마다 반복
 
