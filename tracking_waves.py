@@ -128,6 +128,7 @@ if __name__ == "__main__":
                     print("_resLast: ", _resLast, "lastUpdate: ", lastUpdate)
                     break
                 except Exception as e:
+                    print(traceback.format_exc())
                     break
 
             ###### 임시중단
