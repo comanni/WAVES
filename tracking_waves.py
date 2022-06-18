@@ -6,6 +6,7 @@ import telegram
 from telegram.ext import Updater, MessageHandler, Filters
 import json
 from datetime import datetime
+from pprint import pprint
 
 ##### 기본 Function #####
 def updateJson(filename, data):
@@ -35,6 +36,8 @@ def appendCsv(fileName, data, fieldName, header=False):
 
 #################################################
 ## TELEGRAM INIT
+# my_token = parseJson("URL")["my_token"]
+## FOR DEV
 my_token = parseJson("URL")["my_token"]
 bot = telegram.Bot(token=my_token)  # bot을 선언합니다.
 
@@ -70,16 +73,32 @@ def exportTransaction(id, cursor):
     return {"nextCursor":nextCursor, "isLastPage":isLastPage, "list":txList}
 
 def sendTelegramMessage(message):
-    text = "지갑명 : " + message["nickname"]
+    print("메세지를 발송합니다.")
+    pprint(message)
+    pprint(message["assetName"] == "USD-N")
+    pprint(abs(message["amount"]) >= 5000)
+    text = ""
+    if message["assetName"] == "WAVES" and abs(message["amount"]) > 5000:
+        text += "🚨대규모 거래 탐지\n"
+    if message["assetName"] == "USD-N" and abs(message["amount"]) >= 50000:
+        text += "🚨대규모 거래 탐지\n"
+    if message["assetName"] == "USDT" and abs(message["amount"]) >= 50000:
+        text += "🚨대규모 거래 탐지\n"
+    if message["assetName"] == "USDC" and abs(message["amount"]) >= 50000:
+        text += "🚨대규모 거래 탐지\n"
+    text += "지갑명 : " + message["nickname"]
     text += "\nID : " + message["id"]
     text += "\n발생시간 : " + datetime.fromtimestamp(message["timestamp"]/1000).strftime("%Y-%m-%d %H:%M:%S")
     text += "\n수량 : " + str(message["amount"]) + " " + message["assetName"]
     text += "\n종류 : " + message["type"] + " " + message["addon"]
     text += "\n\n" + f"[트랜잭션 확인하기](https://wscan.io/{message['hashid']})"
+    
     bot.sendMessage(chat_id="-1001615503634", text=text, parse_mode='markdown',disable_web_page_preview=True)
+    # bot.sendMessage(chat_id="158772679", text=text, parse_mode='markdown',disable_web_page_preview=True)
 
 
 def batchSendTelegram(messageSet):
+    print("메세지 발송을 시작합니다.")
     for message in messageSet:
         try:
             sendTelegramMessage(message)
@@ -116,7 +135,7 @@ if __name__ == "__main__":
 
                     print("확인되는 거래 갯수 : ", len(transactions["list"]))
                     for tx in transactions["list"]:
-                        if tx["timestamp"] > lastUpdate:            # 기존 값보다 시간이 흘렀으면
+                        if tx["timestamp"] > int(lastUpdate):            # 기존 값보다 시간이 흘렀으면
                             tx["nickname"] = walletId["nickname"]   # 해당 TX를 저장한다.
                             waitingTx.append(tx)
 
