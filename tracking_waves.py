@@ -100,8 +100,8 @@ def sendTelegramMessage(message):
     text += "\n\n" + f"[트랜잭션 확인하기](https://wscan.io/{message['hashid']})"
     
     bot.sendMessage(chat_id="-1001615503634", text=text, parse_mode='markdown',disable_web_page_preview=True)
-    bot.sendMessage(chat_id="-1001515976944", text=text, parse_mode='markdown',disable_web_page_preview=True)
-    # if bigAlert:
+    if bigAlert:
+        bot.sendMessage(chat_id="-1001515976944", text=text, parse_mode='markdown',disable_web_page_preview=True)
         
     # bot.sendMessage(chat_id="158772679", text=text, parse_mode='markdown',disable_web_page_preview=True)
 
