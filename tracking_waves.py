@@ -41,6 +41,7 @@ def appendCsv(fileName, data, fieldName, header=False):
 my_token = parseJson("URL")["my_token"]
 bot = telegram.Bot(token=my_token)  # bot을 선언합니다.
 
+
 updater = Updater(token=my_token, use_context=True)
 updater.start_polling(drop_pending_updates=True)
 chatId = parseJson("URL")["chat_id"]
@@ -77,15 +78,20 @@ def sendTelegramMessage(message):
     pprint(message)
     pprint(message["assetName"] == "USD-N")
     pprint(abs(message["amount"]) >= 5000)
+    bigAlert = False
     text = ""
     if message["assetName"] == "WAVES" and abs(message["amount"]) > 5000:
         text += "🚨대규모 거래 탐지\n"
+        bigAlert = True
     if message["assetName"] == "USD-N" and abs(message["amount"]) >= 50000:
         text += "🚨대규모 거래 탐지\n"
+        bigAlert = True
     if message["assetName"] == "USDT" and abs(message["amount"]) >= 50000:
         text += "🚨대규모 거래 탐지\n"
+        bigAlert = True
     if message["assetName"] == "USDC" and abs(message["amount"]) >= 50000:
         text += "🚨대규모 거래 탐지\n"
+        bigAlert = True
     text += "지갑명 : " + message["nickname"]
     text += "\nID : " + message["id"]
     text += "\n발생시간 : " + datetime.fromtimestamp(message["timestamp"]/1000).strftime("%Y-%m-%d %H:%M:%S")
@@ -94,6 +100,9 @@ def sendTelegramMessage(message):
     text += "\n\n" + f"[트랜잭션 확인하기](https://wscan.io/{message['hashid']})"
     
     bot.sendMessage(chat_id="-1001615503634", text=text, parse_mode='markdown',disable_web_page_preview=True)
+    bot.sendMessage(chat_id="-1001515976944", text=text, parse_mode='markdown',disable_web_page_preview=True)
+    # if bigAlert:
+        
     # bot.sendMessage(chat_id="158772679", text=text, parse_mode='markdown',disable_web_page_preview=True)
 
 
