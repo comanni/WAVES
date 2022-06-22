@@ -11,8 +11,8 @@ from pprint import pprint
 ##### 기본 Function #####
 def updateJson(filename, data):
 
-    with open("./"+filename +".json", "w") as json_file:
-        json.dump(data, json_file)
+    with open("./"+filename +".json", "w", encoding="UTF-8") as json_file:
+        json.dump(data, json_file, ensure_ascii=False)
 
 def parseJson(filename):
     with open('./'+filename+'.json', "r") as json_file:
